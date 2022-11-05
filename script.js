@@ -82,21 +82,4 @@ function send(){
         console.log("kurang");
     }    
 }
-
-
-// buttonSnd.addEventListener("click",balas)
-// function short(){
-//     if(input){}
-// }
-// function balas(){
-//     if(input){
-//         outMsg.innerHTML += `<div class="msg-kanan">
-//                                 <p>Hallo juga</p>
-//                             </div>`
-//     }
-//     else{
-//         outMsg.innerHTML += `<div class="msg-kanan">
-//                                 <p>Apaan sih</p>
-//                             </div>`
-//     }
-// }
+input.onchange(send())
