@@ -1,35 +1,27 @@
-import { createSignal } from 'solid-js'
-import solidLogo from './assets/solid.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { createSignal, createEffect } from "solid-js";
+import { useRoutes } from "@solidjs/router";
+import { route } from "./routers/router";
+import Navbar from "./components/Navbar";
 
 function App() {
-  const [count, setCount] = createSignal(0)
+  const [winHeight, setWinHeight] = createSignal();
+  const Routes = useRoutes(route);
+  // const top = window.scrollY;
+  // const [hei, setHei] = createSignal('h-20')
+  // window.addEventListener('scroll', (e) => {
+  //   setHei('h-10')
+  //   console.log(tes);
+  //   console.log(tes > top);
 
+  // })
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://solidjs.com" target="_blank">
-          <img src={solidLogo} class="logo solid" alt="Solid logo" />
-        </a>
-      </div>
-      <h1>Vite + Solid</h1>
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count()}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p class="read-the-docs">
-        Click on the Vite and Solid logos to learn more
-      </p>
-    </>
-  )
+    <div className="h-screen">
+      <Navbar />
+      <section className="h-full pt-16">
+        <Routes />
+      </section>
+    </div>
+  );
 }
 
-export default App
+export default App;
