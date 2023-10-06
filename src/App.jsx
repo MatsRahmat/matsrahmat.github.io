@@ -1,7 +1,12 @@
 import { createSignal, createEffect } from "solid-js";
 import { useRoutes } from "@solidjs/router";
 import { route } from "./routers/router";
+
+
 import Navbar from "./components/Navbar";
+import HomePage from "./pages/home";
+import About from "./pages/about";
+import Portofolio from "./pages/Portofolio";
 
 function App() {
   const [winHeight, setWinHeight] = createSignal();
@@ -15,10 +20,17 @@ function App() {
 
   // })
   return (
-    <div className="h-screen">
+    <div className="h-screen scroll-smooth overflow-x-hidden overflow-y-scroll snap-y">
       <Navbar />
-      <section className="h-full pt-16">
-        <Routes />
+        {/* <Routes /> */}
+      <section className="h-full pt-16 snap-start snap-always" id="home">
+        <HomePage />
+      </section>
+      <section id="about" className="snap-start snap-always">
+        <About />
+      </section>
+      <section>
+        <Portofolio />
       </section>
     </div>
   );
