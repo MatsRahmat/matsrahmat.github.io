@@ -18,6 +18,7 @@ const education = [
     date: "2017 - 2020",
     link: "https://smkyatribi.wordpress.com",
   },
+  
 ];
 
 export default function About() {
@@ -51,7 +52,7 @@ export default function About() {
         </section>
         <section className=" lg:w-[80%] xl:w-[80%] sm:w-[80s%] w-[70%] mx-auto text-white py-36">
           <div className="">
-            <h1 className="text-2xl md:text-3xl capitalize font-bold px-5 text-center md:text-left underline underline-offset-4 md:underline-offset-8">
+            <h1 className="text-2xl md:text-3xl capitalize font-bold px-0 xl:px-5 py-5 md:py-8 text-center md:text-left underline underline-offset-4 md:underline-offset-8">
               Education
             </h1>
           </div>
