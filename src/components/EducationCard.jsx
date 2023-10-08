@@ -3,7 +3,7 @@ export default function EducationCard({ obj, top = false, bottom = false }) {
     <>
       <div className={`flex border border-black shadow-md md:border-none md:border-0`}>
         <div className="w-[25%] md:w-36 text-black">
-          <div className="w-full h-full flex justify-center items-center relative">
+          <div className="w-[40px] h-full flex justify-center items-center relative">
             <p className="w-4 h-4 rounded-full bg-lime-800 border border-black absolute z-10" />
             {top && (
               <span className="h-1/2 w-2 bg-lime-500 absolute top-0 right-1/2 translate-x-1/2 z-[8]" />

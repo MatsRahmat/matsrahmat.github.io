@@ -2,3 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.glass {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 20px 20px 68px 0px rgba(145, 192, 255, 0.5)
+}
+
+.glass:hover {
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 10px 10px 36px 0px rgba(145, 192, 255, 0.5)
+}
+/*
+, inset -0px -0px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255), inset 0px 0px 36px 0px rgb(255, 255, 255);
+*/

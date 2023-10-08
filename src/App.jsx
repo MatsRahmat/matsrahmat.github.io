@@ -29,7 +29,7 @@ function App() {
       <section id="about" className="snap-start snap-always">
         <About />
       </section>
-      <section>
+      <section id="project">
         <Portofolio />
       </section>
     </div>

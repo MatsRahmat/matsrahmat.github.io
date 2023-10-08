@@ -18,11 +18,11 @@ export default function Navbar() {
                 About
               </li>
             </a>
-            <A href="/portofolio">
+            <a href="#project">
               <li className="px-3 py-2 cursor-pointer relative bg-slate-300 hover:bg-gradient-to-r hover:duration-150 hover:delay-0 from-purple-700 to-sky-300 bg-clip-text hover:text-transparent duration-200 delay-75 before:block before:h-1 before:absolute hover:before:w-[90%] before:w-0 before:hover:delay-100 before:duration-150 before:bg-cyan-500 before:bottom-0 before:left-1/2 before:-translate-x-1/2">
                 Portofolio
               </li>
-            </A>
+            </a>
             <A href="/contact">
               <li className="px-3 py-2 cursor-pointer relative bg-slate-300 hover:bg-gradient-to-r hover:duration-150 hover:delay-0 from-purple-700 to-sky-300 bg-clip-text hover:text-transparent duration-200 delay-75 before:block before:h-1 before:absolute hover:before:w-[90%] before:w-0 before:hover:delay-100 before:duration-150 before:bg-cyan-500 before:bottom-0 before:right-0">
                 Contact
