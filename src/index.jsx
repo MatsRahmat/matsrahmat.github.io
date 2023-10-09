@@ -5,6 +5,8 @@ import { Router, Routes, Route } from "@solidjs/router";
 
 import "./index.css";
 import App from "./App";
+import 'animate.css';
+import 'animate.css/animate.min.css';
 
 const root = document.getElementById("root");
 

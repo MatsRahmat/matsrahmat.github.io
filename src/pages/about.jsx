@@ -61,6 +61,7 @@ export default function About() {
               <EducationCard
                 key={index}
                 obj={edu}
+                index={index}
                 top={index === education.length - 1 || index !== 0}
                 bottom={index === 0 || index !== education.length - 1}
               />
