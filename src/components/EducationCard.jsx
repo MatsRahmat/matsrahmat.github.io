@@ -1,7 +1,28 @@
-export default function EducationCard({ obj, top = false, bottom = false }) {
+import { createEffect, createSignal } from "solid-js";
+
+export default function EducationCard({ obj, top = false, bottom = false, index }) {
+  // let animated = '';
+  // let delay = ''
+  const [delay, setDelay ] = createSignal('')
+  const [animated, setAnimated ] = createSignal('')
+
+  createEffect(() => {
+    if(index % 2 === 0) {
+      setAnimated('animate__slideInLeft')
+    } else {
+      setAnimated('animate__slideInRight')
+    }
+
+    if(index <= 1){
+      setDelay('animate__fast')
+    } else {
+      setDelay(`animate__delay-${index}s`)
+    }
+    console.log('first time', index);
+  })
   return (
     <>
-      <div className={`flex border border-black shadow-md md:border-none md:border-0`}>
+      <div className={`flex border border-black shadow-md md:border-none md:border-0 animate__animated ${animated()} ${delay()}`}>
         <div className="w-[25%] md:w-36 text-black">
           <div className="w-[40px] h-full flex justify-center items-center relative">
             <p className="w-4 h-4 rounded-full bg-lime-800 border border-black absolute z-10" />
