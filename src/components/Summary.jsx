@@ -1,6 +1,6 @@
 function Summary() {
   return (
-    <section className="lg:w-[80%] xl:w-[80%] sm:w-[80s%] w-[70%] min-h-screen flex flex-col justify-center text-white bg-gradient-radial-at-b from-gray-700 to-slate-2300 border rounded-2xl shadow-xl shadow-slate-500">
+    <section className="lg:w-[80%] xl:w-[80%] sm:w-[80s%] w-[70%] py-10 md:py-20 flex flex-col justify-center text-white bg-gradient-radial-at-b from-gray-700 to-slate-2300 border rounded-2xl shadow-xl shadow-slate-500">
       <div className="pb-4">
         <h1 className="text-3xl md:text-4xl capitalize font-bold px-5 text-center md:text-left underline underline-offset-4 md:underline-offset-8">
           Summary
