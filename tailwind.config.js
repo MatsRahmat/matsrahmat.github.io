@@ -33,6 +33,9 @@ export default {
         'bgradial1': 'glint 1s ease-out infinite',
         'slide-up': 'slide-up 1000ms ease-in-out infinite'
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      }
     },
   },
   plugins: [],

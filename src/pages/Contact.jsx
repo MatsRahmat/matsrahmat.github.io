@@ -3,25 +3,25 @@ import ButtonCustom from "../components/ButtonCustom";
 function Contact() {
   return (
     <>
-      <div className="bg-gradient-radial-at-b to-gray-950 from-zinc-800 min-h-screen flex items-center justify-center flex-col">
+      <div className="bg-gradient-radial-at-b to-gray-950 from-zinc-800 min-h-screen flex items-center justify-center flex-col pb-20">
         <div className="my-20">
-          <h1 className="text-5xl font-bold text-white">
+          <h1 className="text-5xl font-bold text-white ">
             <span className="text-sky-300">Contact</span> Me!
           </h1>
         </div>
-        <div className="w-1/2 bg-gray-900 border border-white rounded-md shadow-lg">
+        <div className="w-[90%] lg:w-1/2 bg-gray-900 border border-white rounded-md shadow-lg">
           <form
             className="p-10 flex flex-col gap-5"
             action="mailto:rahmath123756@gmail.com"
             method="POST"
             encType="text/plain"
           >
-            <div className="flex gap-5">
+            <div className="flex lg:flex-row flex-col gap-5">
             <input
               type="text"
               name="fullname"
               placeholder="Full Name"
-              className="px-3 py-1 rounded text-white text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
+              className="px-3 py-1 rounded text-white md:text-md xl:text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
               required="true"
             />
             <input
@@ -29,28 +29,28 @@ function Contact() {
               name="email"
               placeholder="Email Address"
               autoComplete="false"
-              className="px-3 py-1 rounded text-white text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
+              className="px-3 py-1 rounded text-white md:text-md xl:text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
               required="true"
             />
             </div>
-            <div className="flex gap-5">
+            <div className="flex xl:flex-row flex-col gap-5">
             <input
               type="text"
               name="phoneNumber"
               placeholder="Phone Number"
-              className="px-3 py-1 rounded text-white text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
+              className="px-3 py-1 rounded text-white  md:text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
               required="true"
             />
             <input
               type="text"
               name="subject"
               placeholder="subject"
-              className="px-3 py-1 rounded text-white text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
+              className="px-3 py-1 rounded text-white  md:text-2xl flex-1 bg-gray-600 placeholder:font-semibold"
               required="true"
             />
             </div>
             <textarea
-              className="rounded-md px-3 py-2 text-2xl focus:text-black bg-gray-600 placeholder:font-semibold"
+              className="rounded-md px-3 py-2  md:text-2xl focus:text-black bg-gray-600 placeholder:font-semibold text-white"
               name="message"
               id="emailMessage"
               cols="30"
