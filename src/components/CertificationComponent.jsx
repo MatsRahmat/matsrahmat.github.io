@@ -9,11 +9,11 @@ function CertificationComponent({ obj }) {
   };
   return (
     <div className="flex flex-col justify-center border border-slate-500 shadow-md shadow-gray-500 rounded-lg space-y-5 py-4">
-      <div className="aspect-4/3  w-[18rem] flex flex-col justify-center">
+      <div className="aspect-4/3 w-[18rem] flex flex-col justify-center items-center">
         <img
           src={`/assets/certifications/${obj.name}.png`}
           alt={obj.name || "Certification"}
-          className="object-cover cursor-pointer"
+          className="object-cover cursor-pointer w-[90%]"
           onClick={onClick}
         />
       </div>
@@ -21,19 +21,18 @@ function CertificationComponent({ obj }) {
         <button onClick={onClick}>
           <ButtonCustom text={"Detail"} style={8}></ButtonCustom>
         </button>
-        <a href="">
+        <a href={obj.url} target="_blank">
           <ButtonCustom text={"Download"} style={5}></ButtonCustom>
         </a>
       </div>
-      {show() && (
-        <ReuseModal close={() => setShow(false)}>
+        {show() && (<ReuseModal close={() => setShow(false)}>
           <img
             src={`/assets/certifications/${obj.name}.png`}
             alt=""
             className="object-cover h-[80%]"
           />
-        </ReuseModal>
-      )}
+        </ReuseModal>)}
+        
     </div>
   );
 }
