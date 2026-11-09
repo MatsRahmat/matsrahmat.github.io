@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Konfigurasi Dark Mode berbasis class untuk Tailwind v4 */
+@custom-variant dark (&:is(.dark *));
+
+/* Menambahkan custom color (akan otomatis terbaca sebagai bg-darkBg, text-darkSurface, dll) */
+@theme {
+  --color-darkBg: #0b1120;
+  --color-darkSurface: #1e293b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
